@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "改变搜索",
+  "description": "改变当前的搜索",
+  "version": "1.0",
+  "page_action": {
+    "default_icon": {                    
+      "19": "ico19.png",           
+      "38": "ico38.png"            
+    },
+    "default_popup": "man.html",
+	"default_title": "改变搜索"
+  },
+  "permissions": [
+		"tabs",
+		"http://cn.bing.com/",
+		"http://www.soso.com/*",
+		"http://www.so.com/*",
+		"http://www.bing.com/*",
+        "http://www.zhihu.com/",
+        "http://www.baidu.com/*"
+  ],
+   "background": {
+    "persistent": true,
+    "scripts": ["man.js"]
+  }
+}
